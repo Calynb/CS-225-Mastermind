@@ -1,20 +1,14 @@
 /************
-* Author: Calyn Bauer, Lauren Bailey, and Monica Hyndman
-* CS 125 Project
+* Author: Calyn Bauer, Lauren Bailey, and Issac
+* CS 225 Project
 * Purpose: This file takes the user's guesses and compares 
 * them to the code until they get all 4 correct.
-* Version 1.0  Mar 7, 2023
-*  Version 1.1  Mar 9, 2023
-*  Version 1.2  Mar 21, 2023
-*  Version 1.3  Mar 23, 2023
-*  Version 1.4  Mar 28, 2023
-*  Version 1.5  Mar 29, 2023
-*  Version 1.6  Mar 30, 2023
-*  Version 1.7  Apr 1, 2023
-*  Version 1.7  Apr 4, 2023
+*  Previous: Version 1.7  Apr 4, 2023
+* Ours: Version 2.0 October 31, 2023
 *************/
 #include "headers.h"
 #include "PatternGen.h"
+using namespace std;
 
 // prototypes
 void PrintColors();
@@ -24,69 +18,64 @@ int MasterMind()
    rand_nums rn;
    rn=PatternGenerator();
    char guess_1, guess_2, guess_3, guess_4;
-   int count = 0;
+   int count=0;
    char congrats[] = {'C','o','n','g','r','a','t','u','l','a','t','i','o','n','s','!'}; 
    int i=0;
  
   //printf("%d %d %d %d", rn.num_1, rn.num_2, rn.num_3, rn.num_4);
-  printf("Type your 4 guesses: \n");
+  cout<<"Type your 4 guesses: ")<<endl;
   scanf(" %c%*c%c%*c%c%*c%c" , &guess_1, &guess_2, &guess_3, &guess_4);
   //printf("GUESS 1=%c GUESS2=%c GUESS3=%c GUESS4=%c \n", guess1, guess2, guess3, guess4);
      
   while ((guess_1 != rn.num_1) || (guess_2 != rn.num_2) || (guess_3 != rn.num_3) || (guess_4 != rn.num_4)) {
 // create if loop, if the answer is correct, print 1, if incorrect, print 0
     if (guess_1 == rn.num_1){
-	printf("1 ");
+	cout<<"1 "<<endl;
     }
     if (guess_1 != rn.num_1){
-	printf("0 ");
+	cout<<"0 "<<endl;
     }
     if (guess_2 == rn.num_2){
-	printf("1 ");
+	cout<<"1 "<<endl;
     }
     if (guess_2 != rn.num_2){
-	printf("0 ");
+	cout<<"0 "<<endl;
     }
     if (guess_3 == rn.num_3){
-	printf("1 ");
+	cout<<"1 "<<endl;
     }
     if (guess_3 != rn.num_3){
-	printf("0 ");
+	cout<<"0 "<<endl;
     }
     if (guess_4 == rn.num_4){
-	printf("1 ");
+	cout<<"1 "<<endl;
     }
     if (guess_4 != rn.num_4){
-	printf("0 \n");
+	cout<<"0 "<<endl;
     }
   count = count + 1;
-  printf(" Count: %d \n" ,count);
-  
+  cout<<"Count: "<<count<<endl;
   
  if (count >= 12){                          // If the user cannot guess the code in 12 turns, the game ends
-	 printf("Sorry, you are out of turns. The pattern is ");
+	 cout<<"Sorry, you are out of turns. The pattern is "<<endl;
     PrintColors(rn.num_1);
     PrintColors(rn.num_2);
     PrintColors(rn.num_3);
     PrintColors(rn.num_4);
-  
 	 break;
     }
-  printf("Type your 4 guesses: \n");
+  cout<<"Type your 4 guesses: "<<endl;
   scanf(" %c%*c%c%*c%c%*c%c", &guess_1, &guess_2, &guess_3, &guess_4);
  }
-  
   if (count <= 12 && (guess_1==rn.num_1) && (guess_2==rn.num_2) && (guess_3==rn.num_3) && (guess_4==rn.num_4) ){
     while( congrats[i] ) { 
         printf( "%c", congrats[i++] );
-        } 
-        
-    printf(" You are correct! "); 
-    printf("\nThe pattern is");
+        }     
+    cout<<" You are correct! ")<<endl;
+    cout<<"\nThe pattern is "<<endl;
     PrintColors(rn.num_1);
     PrintColors(rn.num_2);
     PrintColors(rn.num_3);
     PrintColors(rn.num_4);    
-    //printf("%c %c %c %c\nS", PrintColors(rn.num_1), PrintColors(rn.num_2), PrintColors(rn.num_2), PrintColors(rn.num_3), PrintColors(rn.num_4));
   }  
 }
