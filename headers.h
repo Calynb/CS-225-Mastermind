@@ -1,10 +1,13 @@
 /************
-* Author: Calyn Bauer, Lauren Bailey, and Monica Hyndman
-* CS 125 Project
+* Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
+* CS 225 Project
 * Purpose: This header file contains all the used header files
-* Version 1.0  April 1, 2023
+* Previous Version April 1, 2023
+* Version 1.0 Oct 31, 2023
 *************/
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<iostream>
+#include<string>
+#include <fstream>
+#include <cstdlib> 
+#include <ctime> 
+using namespace std;
