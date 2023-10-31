@@ -1,20 +1,16 @@
 /************
-* Author: Calyn Bauer, Lauren Bailey, and Monica Hyndman
-* CS 125 Project
-* Purpose: Converts numbers to colors. Colors correspond to a capital letter. 
+* Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
+* CS 225 Project
+* Purpose: Converts numbers to colors. Colors correspond to a capital letter.
 * Resources: George helped us return the rand_nums rn.
-*  Version 1.0  Mar 7, 2023
-*  Version 1.1  Mar 9, 2023
-*  Version 2.0  Mar 21, 2023
-*  Version 2.1  Mar 23, 2023
-*  Version 2.2  Mar 28, 2023
-*  Version 2.3 Mar 29, 2023
-*  Version 2.4  Mar 30, 2023
+* * Previous Version March 30, 2023
+*  Version 1.0 October 26, 2023
+*              1.1 October 31, 2023
 *************/
 #include "headers.h"
-#include "PatternGen.h"
-// George's version :)
-// create loop to convet numbers to colors/letter
+#include "patternGen.h"
+using namespace std;
+//Create loop to convert numbers to colors/letter
 char numbers_to_colors(int number)
 {
   if (number==2) //red
