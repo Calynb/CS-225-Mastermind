@@ -1,6 +1,7 @@
 //
-// Created by Isaac Jarrells on 10/31/23.
-//
+// Version 1.0
+// Changes will be made over time.
+// Will be the main code that will start the game!
 
 
 #include <iostream>
