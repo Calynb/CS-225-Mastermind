@@ -23,19 +23,7 @@ int main(){
     "*             *",
     "*             *",
     "***************"};
-  int y; 
-  
-  clearScreen();
-  print_array(intro);
-  for(y=1; y< (ROWS-1); y++){   
-    clearScreen();
-    intro[y][y]='x';
-    print_array(intro); 
-    changeColor((y%3)+1);   
-    intro[y][y]=' ';
-  } 
-
-  changeColor(4);
+ 
 
   return 0;
 }
