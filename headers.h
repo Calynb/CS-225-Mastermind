@@ -10,3 +10,6 @@
 #include <fstream>
 #include <cstdlib> 
 #include <ctime> 
+
+void PrintColors(char );
+
