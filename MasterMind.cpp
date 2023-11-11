@@ -18,8 +18,7 @@ int MasterMind()
     rn = PatternGenerator();
     char guess_1, guess_2, guess_3, guess_4;
     int count = 0;
-    char congrats[] = { 'C','o','n','g','r','a','t','u','l','a','t','i','o','n','s','!' };
-    int i = 0;
+    vector<char> congrats = {'C','o','n','g','r','a','t','u','l','a','t','i','o','n','s','!' };
 
     //printf("%d %d %d %d", rn.num_1, rn.num_2, rn.num_3, rn.num_4);
     cout << "Type your 4 guesses: " << endl;
@@ -66,10 +65,11 @@ int MasterMind()
         cout << "Type your 4 guesses: " << endl;
         cin >> guess_1 >> guess_2 >> guess_3 >> guess_4;
     }
+    
     if (count <= 12 && (guess_1 == rn.num_1) && (guess_2 == rn.num_2) && (guess_3 == rn.num_3) && (guess_4 == rn.num_4)) {
-        while (congrats[i]) {
-            printf("%c", congrats[i++]);
-        }
+        for (int i = 0; i < congrats.size(); ++i) {
+        cout << congrats[i] << " ";
+    }
         cout << " You are correct! " << endl;
         cout << "\nThe pattern is " << endl;
         PrintColors(rn.num_1);
