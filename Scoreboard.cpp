@@ -1,29 +1,31 @@
+#include <iostream>
 #include "headers.h"
 #include "PatternGen.h"
+
 #define ROWS 9
 #define COLS 20
 
-void print_array(char lines[ROWS][COLS]){
-
-  int x;
-  for (x=0; x< ROWS; x++){
-    printf("%s\n", lines[x]);
-  }
-
+void print_array(char lines[ROWS][COLS]) {
+    for (int x = 0; x < ROWS; x++) {
+        std::cout << lines[x] << std::endl;
+    }
 }
 
-int main(){
-  char intro[ROWS][COLS]={ 
-    "***************",
-    "*             *",
-    "*             *",
-    "*             *",
-    "*             *",
-    "*             *",
-    "*             *",
-    "*             *",
-    "***************"};
- 
+int main() {
+    char intro[ROWS][COLS] = {
+        "***************",
+        "*             *",
+        "*             *",
+        "*             *",
+        "*             *",
+        "*             *",
+        "*             *",
+        "*             *",
+        "***************"
+    };
 
-  return 0;
+    print_array(intro);
+
+    return 0;
 }
+
