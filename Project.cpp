@@ -21,7 +21,7 @@ int main()
    cin>>ans1;   
    cout<<(" ")<<endl;
 
-   if (ans1 == 'y'|| ans1=='Y') {
+   if (toupper(ans1) =='Y') {
       for (x=0;x<1; x++){
         fgets(rules, 500, f);             //prints the rules from the text file
         printf("%s" , rules);
