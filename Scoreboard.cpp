@@ -1,6 +1,7 @@
 #include <iostream>
 #include "headers.h"
 #include "PatternGen.h"
+#include "Scoreboard.h"  
 
 #define ROWS 9
 #define COLS 20
@@ -28,4 +29,3 @@ int main() {
 
     return 0;
 }
-
