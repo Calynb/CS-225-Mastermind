@@ -1,20 +1,24 @@
-/**********************************************************
-* Author: Calyn Bauer, Lauren Bailey, and Issac
+
+/************************************************************
+* Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
 * CS 225 Project
 * Purpose: This file takes the user's guesses and compares
 * them to the code until they get all 4 correct.
 *  Previous: Version 1.7  Apr 4, 2023
 * Ours: Version 2.0 October 31, 2023
-***********************************************************/
+*       Version 2.1 November 11, 2023
+*************************************************************/
+
+#ifndef UNTITLED_MASTERMIND_H
+#define UNTITLED_MASTERMIND_H
+
 #include "headers.h"
 #include "PatternGen.h"
+#include "PrintColors.h"
+#include "RandomNums.h"
 using namespace std;
 
-// prototypes
-void PrintColors(char);
-
-int MasterMind()
-{
+int masterMind(){
     rand_nums randNum;
     randNum=PatternGenerator();
     char guess_1, guess_2, guess_3, guess_4;
@@ -75,3 +79,5 @@ int MasterMind()
     }
     return 0;
 }
+#endif //UNTITLED_MASTERMIND_H
+
