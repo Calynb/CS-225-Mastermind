@@ -5,11 +5,11 @@
 * Previous Version April 1, 2023
 * Version 1.0 Oct 31, 2023
 *************/
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 #include <fstream>
-#include <cstdlib> 
-#include <ctime> 
+#include <cstdlib>
+#include <ctime>
 
 void PrintColors(char );
 
