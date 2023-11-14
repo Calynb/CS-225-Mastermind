@@ -8,7 +8,7 @@
 *              1.1 October 31, 2023
 *************/
 #include "headers.h"
-#include "patternGen.h"
+#include "PatternGen.h"
 using namespace std;
 //Create loop to convert numbers to colors/letter
 char numbers_to_colors(int number)
