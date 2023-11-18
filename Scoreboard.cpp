@@ -3,8 +3,8 @@
 #include "PatternGen.h"
 #include "Scoreboard.h"  
 
-#define ROWS 4
-#define COLS 4
+#define ROWS 10
+#define COLS 10
 
 void print_array(char lines[ROWS][COLS]) {
     for (int x = 0; x < ROWS; x++) {
@@ -13,17 +13,13 @@ void print_array(char lines[ROWS][COLS]) {
 }
 
 int main() {
-    char intro[ROWS][COLS] = {
-        "***************",
-        "*             *",
-        "*             *",
-        "*             *",
-        "*             *",
-        "*             *",
-        "*             *",
-        "*             *",
-        "***************"
-    };
+char intro[ROWS][COLS] = {
+    "****",
+    "*  *",
+    "*  *",
+    "****"
+};
+
 
     print_array(intro);
 
