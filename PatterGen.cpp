@@ -1,4 +1,3 @@
-
 /************
 * Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
 * CS 225 Project
@@ -6,22 +5,13 @@
 * and the random numbers structure
 * Previous Version March 30, 2023
 *  Version 1.0 October 31, 2023
+*  Version 1.1 November 18, 2023
 *************/
-#ifndef UNTITLED_PATTERNGEN_H
-#define UNTITLED_PATTERNGEN_H
 
-#include<iostream>
-#include <cstdlib>
-#include <ctime>
-#define MAX 5
+#include "PatternGen.h"
 using namespace std;
 
 char numbers_to_colors(int);
-typedef struct random_numbers  // created random numbers structure here
-{
-    char num[MAX];
-} rand_nums;
 
 rand_nums PatternGenerator();
 
-#endif //UNTITLED_PATTERNGEN_H
