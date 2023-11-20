@@ -1,10 +1,14 @@
 /************
-* Author: Calyn Bauer, Lauren Bailey, and Issac
+* Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
 * CS 225 Project
 * Purpose: This file takes the user's guesses and compares 
 * them to the code until they get all 4 correct.
 *  Previous: Version 1.7  Apr 4, 2023
-* Ours: Version 2.0 October 31, 2023
+* Version 2.0 Oct 19, 2023
+* Version 2.1 Oct 31, 2023
+* Version 2.2 Nov 9, 2023
+* Version 2.3 Nov 11, 2023
+* Version 2.4 Nov 20, 2023
 *************/
 #include <iostream>
 #include <vector>
