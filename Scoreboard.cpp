@@ -2,10 +2,10 @@
 * Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
 * CS 225 Project
 * Purpose: This creates a visual of scoreboard
-* Version 2.1 Oct 19, 2023
-* Version 2.2 Nov 9, 2023
-* Version 2.3 Nov 11, 2023
-* Version 2.4 Nov 20, 2023
+* Version 1.0 Nov 2, 2023
+* Version 1.1 Nov 11, 2023
+* Version 1.2 Nov 18, 2023
+* Version 1.3 Nov 20, 2023
 *************/
 #include <iostream>
 #include "headers.h"
