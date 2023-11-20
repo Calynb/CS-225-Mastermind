@@ -2,10 +2,14 @@
 * Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
 * CS 225 Project
 * Purpose: Converts numbers to colors. Colors correspond to a capital letter.
-* Resources: George helped us return the rand_nums rn.
-* * Previous Version March 30, 2023
-*  Version 1.0 October 26, 2023
-*              1.1 October 31, 2023
+* Resources: Previous TA George helped us return the rand_nums rn.
+* Previous Version 1.0 March 30, 2023
+*  Version 2.0 Oct 26, 2023
+*  Version 2.1 Oct 19, 2023
+*  Version 2.2 Oct 31, 2023
+*  Version 2.3 Nov 14, 2023
+*  Version 2.4 Nov 19, 2023
+*  Version 2.5 Nov 20, 2023
 *************/
 #include "headers.h"
 #include "PatternGen.h"
