@@ -1,5 +1,5 @@
 /************
-* Author: Calyn, Lauren, and Issac Jarrells
+* Author: Calyn Bauer, Lauren Bailey, and Issac Jarrells
 * CS 225 Project
 * Purpose: This file asks the user if they want to play mastermind, then runs the MasterMind function if they do.
 * Version 1.7 Apr 1, 2023 
